@@ -1,0 +1,131 @@
+/* esercizio8 - ecommerce */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html, body {
+  background-color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+}
+
+h1 {
+  font-style: oblique;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.griglia-prodotti {
+  width: 100%;
+  height: 600px;
+  background: white;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.riga-prodotti {
+  margin-top: 10px;
+  position: relative;
+}
+
+.img {
+  width: 160px;
+  height: 200px;
+}
+
+.prod1 {
+  margin-bottom: 10px;
+  background-image: url('pd1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.prod2 {
+  margin-bottom: 10px;
+  background-image: url('pd2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.prod3 {
+  margin-bottom: 10px;
+  background-image: url('pd3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.sconto-green {
+  padding: 1px 5px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background: green;
+  text-align: center;
+  color: white;
+}
+
+.sconto-red {
+  padding: 1px 5px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background: red;
+  text-align: center;
+  color: white;
+}
+
+span {
+  display: none;
+  color: red;
+  font-size: 100px;
+  position: absolute;
+  top: 30px;
+  left: 30px
+}
+
+.prod1:hover span, .prod2:hover span, .prod3:hover span {
+  display: block;
+}
+
+footer>p {
+  text-align: center;
+  border-top: 1px solid grey;
+  padding: 25px;
+}
+
+
+/* mobile */
+@media (max-width: 500px) {
+  .griglia-prodotti {
+    height: 1350px;
+  }
+
+.prod1, .prod2, .prod3 {
+  display: block;
+  margin: 0px auto;
+}
+
+
+
+}
